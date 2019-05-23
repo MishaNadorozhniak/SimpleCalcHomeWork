@@ -32,25 +32,29 @@ namespace SimpleCalc
 		//Create a method to add the two numbers
 		public double Add()
 		{
-			throw new NotImplementedException();
+            return Number1 + Number2;
 		}
 
 		//Create a method to subtract the two numbers
 		public double Subtract()
-		{
-			throw new NotImplementedException();
-		}
+        {
+            return Number1 - Number2;
+        }
 
 		//Create a method to multiply the two numbers
 		public double Multiply()
-		{
-			throw new NotImplementedException();
-		}
+        {
+            return Number1 * Number2;
+        }
 
 		//Create a method to divide the two numbers
 		public double Divide()
-		{
-			throw new NotImplementedException();
-		}
+        {
+            if (!_number2.Equals(0))
+            {
+                return Number1 / Number2;
+            }
+            else return 0;
+        }
 	}
 }
